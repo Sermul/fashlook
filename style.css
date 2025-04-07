@@ -1,0 +1,12 @@
+body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Tambahan gaya khusus */
+  .highlight {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+  }
+  
