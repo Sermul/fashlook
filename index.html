@@ -76,12 +76,9 @@
           </p>
         </div>
 
-        <!-- Image with shadow -->
-        <div class="relative md:w-1/2 flex justify-center">
-          <!-- Back box (shadow) -->
-          <div class="w-64 h-40 bg-white rounded absolute -top-4 right-4"></div>
-          <!-- Main image -->
-          <img src="image/style6.jpg" alt="Style Image" class="w-64 h-40 object-cover rounded relative z-10">
+        <div class="image-container">
+          <div class="back-box"></div>
+          <img src="image/style6.jpg" alt="Style Image" class="main-image" />
         </div>
       </div>
     </section>
@@ -95,28 +92,28 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
         <!-- Box 1 -->
-        <div class="bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
+        <div class="feature-box bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
           <img src="image/style1.jpg" alt="Rekomendasi Gaya" class="w-full h-72 object-contain rounded mb-4" />
           <h3 class="font-semibold text-lg">Rekomendasi Gaya</h3>
           <p class="text-sm mt-1 text-gray-600">Disesuaikan dengan mood dan acara.</p>
         </div>
 
         <!-- Box 2 -->
-        <div class="bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
+        <div class="feature-box bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
           <img src="image/style2.jpg" alt="Mix & Match" class="w-full h-72 object-contain rounded mb-4" />
           <h3 class="font-semibold text-lg">Mix & Match</h3>
           <p class="text-sm mt-1 text-gray-600">Padukan item fashion favoritmu dengan mudah.</p>
         </div>
 
         <!-- Box 3 -->
-        <div class="bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
+        <div class="feature-box bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
           <img src="image/style3.jpg" alt="Tren Terkini" class="w-full h-72 object-contain rounded mb-4" />
           <h3 class="font-semibold text-lg">Tren Terkini</h3>
           <p class="text-sm mt-1 text-gray-600">Update setiap minggu sesuai dunia fashion.</p>
         </div>
 
         <!-- Box 4 -->
-        <div class="bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
+        <div class="feature-box bg-white rounded-lg p-4 text-center shadow min-h-[400px] flex flex-col">
           <img src="image/style4.jpg" alt="Favorit & Simpan" class="w-full h-72 object-contain rounded mb-4" />
           <h3 class="font-semibold text-lg">Favorit & Simpan</h3>
           <p class="text-sm mt-1 text-gray-600">Koleksi gaya favorit dalam satu klik.</p>
@@ -165,34 +162,34 @@
         <div class="absolute w-28 h-28 border-2 border-white rounded-full bottom-10 right-20 opacity-10"></div>
         <div class="absolute w-20 h-20 bg-white bottom-0 right-0 opacity-10"></div>
       </div>
-
+    
       <div class="relative z-10 max-w-6xl mx-auto text-center space-y-6">
-        <div class="flex justify-center flex-wrap gap-6 font-medium text-sm">
-          <a href="#">Style</a>
-          <a href="#">Tren</a>
-          <a href="#">Tips Fashion</a>
-          <span class="font-bold">FASHLOOK</span>
-          <a href="#">Tentang</a>
-          <a href="#">Blog</a>
-          <a href="#">Kontak</a>
+        <!-- Link yang bisa di-scroll secara horizontal dan di tengah -->
+        <div class="flex justify-center gap-6 font-medium text-sm overflow-x-auto scroll-smooth" id="scrolling-links">
+          <a href="#" class="inline-block">Style</a>
+          <a href="#" class="inline-block">Tren</a>
+          <a href="#" class="inline-block">Tips Fashion</a>
+          <span class="font-bold inline-block">FASHLOOK</span>
+          <a href="#" class="inline-block">Tentang</a>
+          <a href="#" class="inline-block">Blog</a>
+          <a href="#" class="inline-block">Kontak</a>
         </div>
-
-        <hr class="border-pink-400 max-w-xl mx-auto" />
-
-        <div class="flex justify-center space-x-3">
-          <div class="w-4 h-4 bg-white rounded-full"></div>
+        
+        <!-- Bulatan yang mengikuti scroll -->
+        <div class="flex justify-center space-x-3 mt-4" id="bulatans">
+          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
           <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
           <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
           <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
           <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
         </div>
-
-        <p class="text-xs text-black/60 mt-2">
-          &copy; 2025 Fashlook &nbsp; | &nbsp;
-          <a href="#" class="underline">Kebijakan Privasi</a> &nbsp;&bull;&nbsp;
-          <a href="#" class="underline">Syarat & Ketentuan</a>
-        </p>
       </div>
+
+      <p class="text-xs text-black/60 mt-2 text-center">
+        &copy; 2025 Fashlook &nbsp; | &nbsp;
+        <a href="#" class="underline">Kebijakan Privasi</a> &nbsp;&bull;&nbsp;
+        <a href="#" class="underline">Syarat & Ketentuan</a>
+      </p>      
     </footer>
     <script src="script.js"></script>
   </body>

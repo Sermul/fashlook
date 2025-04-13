@@ -66,3 +66,88 @@ button.mt-6:hover {
 #collections .bg-pink-50 {
   background-color: #F9F2F6;
 }
+
+.image-container {
+  position: relative;
+  width: 256px; /* w-64 */
+  height: 160px; /* h-40 */
+  margin: auto;
+}
+
+.back-box {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.main-image {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.image-container:hover .back-box {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.image-container:hover .main-image {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.feature-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional glowing border on hover */
+.feature-box:hover img {
+  box-shadow: 0 0 12px rgba(255, 192, 203, 0.4); /* pink glow */
+  transition: box-shadow 0.4s ease;
+}
+
+/* Styling for scrolling links */
+#scrolling-links {
+  display: flex;
+  gap: 1.5rem; /* memberi jarak antar link */
+  overflow-x: auto;
+  padding-bottom: 16px; /* memberi ruang di bawah agar tidak tertutup oleh scroll */
+  white-space: nowrap; /* agar teks tidak terpotong atau ter-wrap */
+  justify-content: center; /* Untuk memastikan link terpusat */
+  scroll-behavior: smooth; /* untuk smooth scroll */
+}
+
+/* Styling untuk setiap link */
+#scrolling-links a {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+/* Styling scrollbar */
+#scrolling-links::-webkit-scrollbar {
+  height: 6px; /* ketebalan scrollbar */
+}
+
+#scrolling-links::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* warna scrollbar */
+}
