@@ -1,12 +1,68 @@
+/* General body and text */
 body {
-    scroll-behavior: smooth;
-  }
-  
-  /* Tambahan gaya khusus */
-  .highlight {
-    background-color: #ffb6c1;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-  }
-  
+  font-family: 'Sans-serif';
+  background-color: #F9F2F6;
+}
+
+.text-gray-800 {
+  color: #2D3748;
+}
+
+/* Navbar */
+header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .text-xl {
+  font-size: 1.25rem;
+}
+
+button {
+  background-color: #F472B6; /* pink-300 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+button:hover {
+  background-color: #F16D9E; /* pink-400 */
+}
+
+/* Hero section */
+#home {
+  padding: 5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+#home h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#home p {
+  max-width: 24rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Section colors */
+.bg-pink-50 {
+  background-color: #F9F2F6;
+}
+
+/* Button for Explore Looks */
+button.mt-6 {
+  background-color: #F472B6;
+}
+
+button.mt-6:hover {
+  background-color: #F16D9E;
+}
+
+/* Collection Section */
+#collections .bg-pink-50 {
+  background-color: #F9F2F6;
+}
