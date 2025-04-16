@@ -19,4 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // === BURGER MENU FUNCTION ===
+  const burgerBtn = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (burgerBtn && mobileMenu) {
+    burgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
 });
