@@ -10,39 +10,45 @@
   <body class="bg-pink-50 text-gray-800 font-sans">
 
     <!-- Navbar -->
-<header class="bg-white shadow p-4 flex justify-between items-center relative">
-  <div class="text-xl font-bold">FASHLOOK</div>
-  <div class="flex items-center space-x-6 md:space-x-4">
-    <nav class="space-x-4 text-sm hidden md:block">
-      <a href="#home" class="hover:underline">Home</a>
-      <a href="#trends" class="hover:underline">Trends</a>
-      <a href="#collections" class="hover:underline">Collections</a>
-      <a href="#about" class="hover:underline">About</a>
-    </nav>
-    <button class="bg-pink-300 hover:bg-pink-400 text-white px-4 py-2 rounded text-sm hidden md:inline-block">
-      Join Now
-    </button>
-  </div>
-<!-- Burger Menu for Mobile -->
-<div class="md:hidden">
-  <button id="burger-btn" class="text-pink-500 focus:outline-none">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-  </button>
-</div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md p-4 space-y-2 text-sm text-center hidden md:hidden z-50">
-  <a href="#home" class="block hover:underline">Home</a>
-  <a href="#trends" class="block hover:underline">Trends</a>
-  <a href="#collections" class="block hover:underline">Collections</a>
-  <a href="#about" class="block hover:underline">About</a>
-  <button class="bg-pink-300 hover:bg-pink-400 text-white px-4 py-2 rounded text-sm mt-2">
-    Join Now
-  </button>
-</div>
-</header>
+    <header class="bg-white shadow p-4 flex justify-between items-center relative">
+      <!-- Logo -->
+      <div>
+        <img src="image/logo.png" alt="Fashlook Logo" class="h-20 w-auto">
+      </div>
+    
+      <div class="flex items-center space-x-6 md:space-x-4">
+        <nav class="space-x-4 text-sm hidden md:block">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#trends" class="hover:underline">Trends</a>
+          <a href="#collections" class="hover:underline">Collections</a>
+          <a href="#about" class="hover:underline">About</a>
+        </nav>
+        <button class="bg-pink-300 hover:bg-pink-400 text-white px-4 py-2 rounded text-sm hidden md:inline-block">
+          Join Now
+        </button>
+      </div>
+    
+      <!-- Burger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="burger-btn" class="text-pink-500 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md p-4 space-y-2 text-sm text-center hidden md:hidden z-50">
+        <a href="#home" class="block hover:underline">Home</a>
+        <a href="#trends" class="block hover:underline">Trends</a>
+        <a href="#collections" class="block hover:underline">Collections</a>
+        <a href="#about" class="block hover:underline">About</a>
+        <button class="bg-pink-300 hover:bg-pink-400 text-white px-4 py-2 rounded text-sm mt-2">
+          Join Now
+        </button>
+      </div>
+    </header>
+    
 
 
     <!-- Hero Section -->
@@ -97,7 +103,9 @@
     <!-- Features -->
     <section id="collections" class="px-6 py-20 bg-pink-50">
       <div class="text-center mb-12">
-        <h2 class="text-2xl font-bold">Kenapa Pilih Fashlook? Penasaran dengan Koleksi Kami?</h2>
+        <h2 class="text-2xl font-bold bg-gradient-to-r from-black to-pink-500 bg-clip-text text-transparent">
+          Kenapa Pilih Fashlook? Penasaran dengan Koleksi Kami?
+        </h2>        
         <p class="text-sm mt-2">“Inspirasi gaya yang autentik &mdash; untuk semua suasana dan kepribadian.”</p>
       </div>
 
@@ -167,7 +175,7 @@
     </section>
 
    <!-- Footer -->
-<footer class="bg-pink-200 text-gray-800 px-6 pt-16 pb-10 relative overflow-hidden">
+<footer class="bg-pink-400 text-white px-6 pt-16 pb-10 relative overflow-hidden">
   <!-- Background dekorasi -->
   <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
     <div class="absolute w-20 h-20 bg-white rounded-full top-10 left-10 opacity-10"></div>
@@ -177,40 +185,53 @@
     <div class="absolute w-20 h-20 bg-white bottom-0 right-0 opacity-10"></div>
   </div>
 
-  <div class="relative z-10 max-w-6xl mx-auto text-center space-y-8">
-    <!-- Link -->
-    <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 font-medium text-sm text-center" id="scrolling-links">
-      <a href="#">Style</a>
-      <a href="#">Tren</a>
-      <a href="#">Tips Fashion</a>
-      <span class="font-bold">FASHLOOK</span>
-      <a href="#">Tentang</a>
-      <a href="#">Blog</a>
-      <a href="#">Kontak</a>
+  <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+    <!-- Logo dan hak cipta -->
+    <div class="space-y-4 text-center md:text-left">
+      <img src="image/logo.png" alt="Logo Fashlook" class="mx-auto md:mx-0 w-40">
+      <p class="text-white/80">Fashlook © 2025. All rights reserved.</p>
+      <p class="text-white/80">Inspired by fashion & lifestyle trends.</p>
     </div>
 
-    <!-- Ikon sosial media -->
-    <div class="flex justify-center gap-6 mt-4">
-      <a href="#" class="hover:scale-110 transition duration-300" title="Instagram">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="w-6 h-6 text-gray-900">
-      </a>
-      <a href="#" class="hover:scale-110 transition duration-300" title="TikTok">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="TikTok" class="w-6 h-6 text-gray-900">
-      </a>
-      <a href="#" class="hover:scale-110 transition duration-300" title="Pinterest">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pinterest.svg" alt="Pinterest" class="w-6 h-6 text-gray-900">
-      </a>
-      <a href="#" class="hover:scale-110 transition duration-300" title="Facebook">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" class="w-6 h-6 text-gray-900">
-      </a>
+    <!-- Layanan -->
+    <div class="space-y-2">
+      <h3 class="font-bold text-lg">Layanan Kami</h3>
+      <p>Rekomendasi Style Harian</p>
+      <p>Artikel Tren Fashion</p>
+      <p>Konsultasi Gaya Personal</p>
+      <p>Tips Mix & Match</p>
+      <p>Inspirasi Outfit Sesuai Acara</p>
+      <p>Fashion Lookbook & Gallery</p>
     </div>
 
-    <!-- Credit -->
-    <p class="text-xs text-black/60 mt-6">
-      &copy; 2025 <span class="font-semibold">Fashlook</span> &nbsp; | &nbsp;
-      <a href="#" class="underline">Kebijakan Privasi</a> &nbsp;&bull;&nbsp;
-      <a href="#" class="underline">Syarat & Ketentuan</a>
-    </p>
+    <!-- Kategori -->
+    <div class="space-y-2">
+      <h3 class="font-bold text-lg">Kategori Populer</h3>
+      <p>Casual & Streetwear</p>
+      <p>Hijab Fashion</p>
+      <p>Office Look</p>
+      <p>Gaya Minimalis</p>
+      <p>Fashion Remaja</p>
+    </div>
+
+    <!-- Kontak Kami -->
+    <div class="space-y-2">
+      <h3 class="font-bold text-lg">Kontak Kami</h3>
+      <p><i class="inline-block mr-1">📞</i> Phone: 0812-1234-5678</p>
+      <p><i class="inline-block mr-1">💬</i> WhatsApp: 0812-1234-5678</p>
+      <p><i class="inline-block mr-1">📧</i> Email: support@fashlook.com</p>
+
+      <button class="mt-4 bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-2 px-4 rounded-full font-semibold shadow-lg hover:scale-105 transition duration-300">
+        Kebijakan Privasi
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol back to top -->
+  <div class="fixed bottom-5 right-5">
+    <a href="#top" class="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full shadow-lg transition duration-300">
+      ⬆️
+    </a>
   </div>
 </footer>
 
