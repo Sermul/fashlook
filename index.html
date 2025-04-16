@@ -54,7 +54,11 @@
       <button class="mt-6 bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600">Explore Looks</button>
 
       <div class="mt-12">
-        <img src="image/stylesendiri.jpg" alt="Tampilan Fashion" class="mx-auto rounded shadow-lg w-full md:w-2/3 h-auto object-cover" />
+        <img 
+        src="image/stylesendiri.jpg" 
+        alt="Tampilan Fashion" 
+        class="mx-auto rounded shadow-lg w-full md:w-2/3 h-auto object-cover fashion-hover"
+      />       
       </div>
 
       <div class="mt-12">
@@ -65,23 +69,30 @@
       </div>
     </section>
 
-    <!-- Trends Section -->
-    <section id="trends" class="bg-pink-200 text-gray-800 px-6 py-16">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
-        <!-- Text -->
-        <div class="md:w-1/2 text-center md:text-left">
-          <h2 class="text-2xl font-semibold mb-4">Trend Gaya</h2>
-          <p class="text-sm">
-            Fashion bukan hanya soal tren, tapi bagaimana kamu mengekspresikan dirimu dengan percaya diri.
-          </p>
-        </div>
+  <!-- Trends Section -->
+<section id="trends" class="bg-pink-200 text-gray-800 px-6 py-16">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Text -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-4">Trend Gaya</h2>
+      <p class="text-sm md:text-base text-gray-700 mb-6">
+        Fashion bukan hanya soal tren, tapi bagaimana kamu mengekspresikan dirimu dengan percaya diri.
+      </p>
+      <!-- Button to another page (example) -->
+      <a href="#collections" class="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-all duration-300">
+        Lihat Tren Lainnya
+      </a>
+    </div>
 
-        <div class="image-container">
-          <div class="back-box"></div>
-          <img src="image/style6.jpg" alt="Style Image" class="main-image" />
-        </div>
-      </div>
-    </section>
+    <!-- Gambar -->
+    <div class="image-container relative">
+      <div class="back-box"></div>
+      <img src="image/style6.jpg" alt="Style Image" class="main-image rounded-xl shadow-lg" />
+    </div>
+  </div>
+</section>
+
 
     <!-- Features -->
     <section id="collections" class="px-6 py-20 bg-pink-50">
@@ -121,27 +132,29 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-white px-6 py-16">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
-        <!-- Video -->
-        <div class="w-full md:w-1/2">
-          <video controls class="rounded shadow w-full h-[240px] object-cover">
-            <source src="image/vidio1.mp4" type="video/mp4">
-            Browser kamu tidak mendukung pemutar video.
-          </video>
-        </div>
+   <!-- About Section -->
+<section id="about" class="bg-white px-6 py-16">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <!-- Video -->
+    <div class="w-full md:w-1/2">
+      <video controls class="rounded shadow-xl w-full h-[300px] object-cover">
+        <source src="image/vidio1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung pemutar video.
+      </video>
+    </div>
 
-        <!-- Text -->
-        <div class="w-full md:w-1/2">
-          <h3 class="text-xl font-semibold mb-4">Gaya yang Mencerminkan Dirimu</h3>
-          <p class="text-sm mb-4">
-            Pilih gaya dari berbagai inspirasi terbaik dan buat koleksi gaya pribadimu sendiri.
-          </p>
-          <button class="bg-pink-500 text-white px-5 py-2 rounded hover:bg-pink-600">Lihat Detail</button>
-        </div>
-      </div>
-    </section>
+    <!-- Text -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h3 class="text-3xl font-semibold text-gray-900 mb-4">Tentang Fashlook</h3>
+      <p class="text-sm md:text-base text-gray-700 mb-6">
+        Fashlook adalah tempat di mana inspirasi fashion bertemu dengan gaya pribadi. Kami membantu kamu menemukan dan mengekspresikan dirimu melalui tren gaya terkini. Dengan berbagai pilihan inspirasi fashion, kamu bisa menciptakan koleksi gaya yang mencerminkan kepribadian unikmu.
+      </p>
+      <button class="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-all duration-300">
+       Lihat Selengkapnya
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- Free Trial -->
     <section class="bg-pink-100 px-6 py-16 text-center">
@@ -153,44 +166,55 @@
       </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-pink-200 text-white px-6 pt-16 pb-10 relative overflow-hidden">
-      <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div class="absolute w-20 h-20 bg-white rounded-full top-10 left-10 opacity-10"></div>
-        <div class="absolute w-24 h-24 border-2 border-white top-24 left-1/4 opacity-10"></div>
-        <div class="absolute border-t-8 border-l-8 border-white w-24 h-24 rotate-45 top-1/2 left-0 opacity-10"></div>
-        <div class="absolute w-28 h-28 border-2 border-white rounded-full bottom-10 right-20 opacity-10"></div>
-        <div class="absolute w-20 h-20 bg-white bottom-0 right-0 opacity-10"></div>
-      </div>
-    
-      <div class="relative z-10 max-w-6xl mx-auto text-center space-y-6">
-        <!-- Link yang bisa di-scroll secara horizontal dan di tengah -->
-        <div class="flex justify-center gap-6 font-medium text-sm overflow-x-auto scroll-smooth" id="scrolling-links">
-          <a href="#" class="inline-block">Style</a>
-          <a href="#" class="inline-block">Tren</a>
-          <a href="#" class="inline-block">Tips Fashion</a>
-          <span class="font-bold inline-block">FASHLOOK</span>
-          <a href="#" class="inline-block">Tentang</a>
-          <a href="#" class="inline-block">Blog</a>
-          <a href="#" class="inline-block">Kontak</a>
-        </div>
-        
-        <!-- Bulatan yang mengikuti scroll -->
-        <div class="flex justify-center space-x-3 mt-4" id="bulatans">
-          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
-          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
-          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
-          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
-          <div class="w-4 h-4 bg-white rounded-full opacity-40"></div>
-        </div>
-      </div>
+   <!-- Footer -->
+<footer class="bg-pink-200 text-gray-800 px-6 pt-16 pb-10 relative overflow-hidden">
+  <!-- Background dekorasi -->
+  <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+    <div class="absolute w-20 h-20 bg-white rounded-full top-10 left-10 opacity-10"></div>
+    <div class="absolute w-24 h-24 border-2 border-white top-24 left-1/4 opacity-10"></div>
+    <div class="absolute border-t-8 border-l-8 border-white w-24 h-24 rotate-45 top-1/2 left-0 opacity-10"></div>
+    <div class="absolute w-28 h-28 border-2 border-white rounded-full bottom-10 right-20 opacity-10"></div>
+    <div class="absolute w-20 h-20 bg-white bottom-0 right-0 opacity-10"></div>
+  </div>
 
-      <p class="text-xs text-black/60 mt-2 text-center">
-        &copy; 2025 Fashlook &nbsp; | &nbsp;
-        <a href="#" class="underline">Kebijakan Privasi</a> &nbsp;&bull;&nbsp;
-        <a href="#" class="underline">Syarat & Ketentuan</a>
-      </p>      
-    </footer>
+  <div class="relative z-10 max-w-6xl mx-auto text-center space-y-8">
+    <!-- Link -->
+    <div class="flex flex-wrap justify-center gap-6 font-medium text-sm" id="scrolling-links">
+      <a href="#">Style</a>
+      <a href="#">Tren</a>
+      <a href="#">Tips Fashion</a>
+      <span class="font-bold">FASHLOOK</span>
+      <a href="#">Tentang</a>
+      <a href="#">Blog</a>
+      <a href="#">Kontak</a>
+    </div>
+
+    <!-- Ikon sosial media -->
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="#" class="hover:scale-110 transition duration-300" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="w-6 h-6 text-gray-900">
+      </a>
+      <a href="#" class="hover:scale-110 transition duration-300" title="TikTok">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="TikTok" class="w-6 h-6 text-gray-900">
+      </a>
+      <a href="#" class="hover:scale-110 transition duration-300" title="Pinterest">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pinterest.svg" alt="Pinterest" class="w-6 h-6 text-gray-900">
+      </a>
+      <a href="#" class="hover:scale-110 transition duration-300" title="Facebook">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" class="w-6 h-6 text-gray-900">
+      </a>
+    </div>
+
+    <!-- Credit -->
+    <p class="text-xs text-black/60 mt-6">
+      &copy; 2025 <span class="font-semibold">Fashlook</span> &nbsp; | &nbsp;
+      <a href="#" class="underline">Kebijakan Privasi</a> &nbsp;&bull;&nbsp;
+      <a href="#" class="underline">Syarat & Ketentuan</a>
+    </p>
+  </div>
+</footer>
+
+    
     <script src="script.js"></script>
   </body>
 </html>

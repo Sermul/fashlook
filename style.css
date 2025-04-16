@@ -151,3 +151,32 @@ button.mt-6:hover {
 #scrolling-links::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2); /* warna scrollbar */
 }
+
+
+
+/* Efek hover modern: zoom + tilt + glow */
+.fashion-hover {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.fashion-hover:hover {
+  transform: scale(1.05) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 20px 30px rgba(255, 105, 180, 0.3); /* pink glow */
+}
+
+
+/*untuk footer
+/* Buat icon invert jadi putih di background pink */
+.invert {
+  filter: invert(1);
+}
+
+
+
+
+
+
+
+
